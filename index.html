@@ -1,54 +1,59 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>Akan Names</title>
-    </head>
-    <body>
-        <p><strong>Hello!<br>In this page we will take your birthday and calculate the day of the week you were born and then depending on your gender we will get your Akan Name.</strong></p>
-        
-        <form class="form-horizontal">
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="email">Enter Date Of Birth:</label>
-              <div class="col-sm-10">
-                <input type="number" class="form-control" id="dob" placeholder="Date Of Birth" pattern="\d{2}" maxlength="{2}" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="pwd">Enter Month of Birth:</label>
-              <div class="col-sm-10">
-                <input type="number" class="form-control" id="mob" placeholder="Month Of Birth" pattern="\d{2}" maxlength="{2}" required>
-              </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="pwd">Enter Year of Birth:</label>
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <title>Akan Names</title>
+      </head>
+      <body>
+          <p><strong>Hello!<br>In this page we will take your birthday and calculate the day of the week you were born and then depending on your gender we will get your Akan Name.</strong></p>
+          
+          <form class="form-horizontal">
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Enter Date Of Birth:</label>
                 <div class="col-sm-10">
-                  <input type="number" class="form-control" id="mob" placeholder="Year Of Birth" pattern="\d{2}" maxlength="{2}" required>
+                  <input type="text" class="form-control" id="dob" placeholder="Date Of Birth" pattern="\d{2}" maxlength="{2}" required>
                 </div>
               </div>
               <div class="form-group">
-                <label class="control-label col-sm-2" for="pwd">Enter Year of Birth:</label>
+                <label class="control-label col-sm-2" for="pwd">Enter Month of Birth:</label>
                 <div class="col-sm-10">
-                  <input type="number" class="form-control" id="mob" placeholder="Century Of Birth" pattern="\d{2}" maxlength="{2}" required>
+                  <input type="text" class="form-control" id="mob" placeholder="Month Of Birth" pattern="\d{2}" maxlength="{2}" required>
                 </div>
               </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Male
-                </label>
-              </div>
+              <div class="form-group">
+                  <label class="control-label col-sm-2" for="pwd">Enter Year of Birth:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="yob" placeholder="Year Of Birth" pattern="\d{2}" maxlength="{2}" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="pwd">Enter Century of Birth:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="cob" placeholder="Century Of Birth" pattern="\d{2}" maxlength="{2}" required>
+                  </div>
+                </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Female
-                </label>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="male">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="female" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Female
+                  </label>
+                </div>
+                <!-- <input type="button" onClick="getDayOfWeek()" Value="Submit" /> -->
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default" onclick="getDayOfWeek()">Submit</button>
+                </div>
               </div>
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default" onclick="getDayOfWeek()">Submit</button>
-              </div>
-            </div>
-          </form>
-    </body>
-</html>
+            </form>
+
+            <p>The Result is : <br>
+              <span id = "DayOfWeek"></span>
+            </p>
+      </body>
+  </html>
