@@ -30,7 +30,7 @@ For any support concerning source code and request to collaborate, contact me vi
 
 ## Github Pages
 
-The site is live at : https://github.com/Nicanor777/portfolio
+The site is live at : https://nicanor777.github.io/akan-names/
 
 ### License
 
