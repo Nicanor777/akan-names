@@ -41,41 +41,41 @@ function getDayOfWeek() {
 
         if (mSex == true) {
             if (DayOfWeek == 1) {
-                alert("Kwadwo");
+                alert("Your Akan Name Is: Kwadwo");
             } else if (DayOfWeek == 2) {
-                alert("Kwabena");
+                alert("Your Akan Name Is: Kwabena");
             } else if (DayOfWeek == 3) {
-                alert("Kwaku");
+                alert("Your Akan Name Is: Kwaku");
             } else if (DayOfWeek == 4) {
-                alert("Yaw");
+                alert("Your Akan Name Is: Yaw");
             }
             else if (DayOfWeek == 5) {
-                alert("Kofi");
+                alert("Your Akan Name Is: Kofi");
             }
             else if (DayOfWeek == 6) {
-                alert("Kwame");
+                alert("Your Akan Name Is: Kwame");
             }
             else if (DayOfWeek == 7) {
-                alert("Kwasi");
+                alert("Your Akan Name Is: Kwasi");
             }
         } else {
             if (DayOfWeek == 1) {
-                alert("Adwoa");
+                alert("Your Akan Name Is: Adwoa");
             } else if (DayOfWeek == 2) {
-                alert("Abenaa");
+                alert("Your Akan Name Is: Abenaa");
             } else if (DayOfWeek == 3) {
                 alert("Akua");
             } else if (DayOfWeek == 4) {
-                alert("Yaa");
+                alert("Your Akan Name Is: Yaa");
             }
             else if (DayOfWeek == 5) {
-                alert("Afua");
+                alert("Your Akan Name Is: Afua");
             }
             else if (DayOfWeek == 6) {
-                alert("Ama");
+                alert("Your Akan Name Is: Ama");
             }
             else if (DayOfWeek == 7) {
-                alert("Akosua");
+                alert("Your Akan Name Is: Akosua");
             }
         }
         return "Invalid Day Of Week";
